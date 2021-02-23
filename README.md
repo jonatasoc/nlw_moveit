@@ -1,8 +1,9 @@
 <div align="center">
     <img alt="Movit" title="Movit" width="64" height="64" src="docs/logo.png" />
     <br>
-    <h1><strong>Movit<strong><h1>
-</h1>
+    <h1><strong>Movit</strong><h1>
+
+</div>
 
 <!-- <p align="center">
    <img src="docs/happy.jpeg" width="auto"/>
