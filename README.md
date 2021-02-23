@@ -1,46 +1,87 @@
-# Getting Started with Create React App
+<h1 align="center">
+    <img alt="Movit" title="Movit" width="64" height="64" src="docs/logo.png" />
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- <p align="center">
+   <img src="docs/happy.jpeg" width="auto"/>
+</p>
 
-## Available Scripts
+<p align="center">
+   <img src="docs/OrphanagesView.png" width="auto"/>
+</p>
 
-In the project directory, you can run:
+<p align="center">
+   <img src="docs/Screenshot-Create.png" width="auto"/>
+</p> -->
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+# :pushpin: Table of Contents
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- [About](#information_source-about)
+- [Features](#rocket-features)
+- [Technologies](#star-technologies)
+- [Installation](#construction_worker-installation)
+- [Getting Started](#runner-getting-started)
+- [FAQ](#postbox-faq)
+- [License](#closed_book-license)
 
-### `yarn test`
+<br />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# :information_source: About
 
-### `yarn build`
+<!-- This project was created in the NLW (Next Level Week) #3 promoted by [Rocketseat](https://rocketseat.com.br/).
+The project consists in connecting users to orphanages near by their location.
+The App contais 4 pages:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Home
+- OrphanagesMap (List of Orphanages in a Map)
+- Orphanage (specific Orphanage selected)
+- Create Orphanage -->
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# :rocket: Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- - #### Home Landing Page.
+- #### A list of created Orphanages pinned in a map
+- #### Creating new orphanages
+- #### View specific orphanage
+- #### Upload Photos -->
 
-### `yarn eject`
+# :star: Technologies
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+| Frontend                                                  |
+| --------------------------------------------------------- |
+| [React](https://reactjs.org/)                             |
+| [React Hooks](https://reactjs.org/)                       |
+| [Context API](https://reactjs.org/)                       |
+| [NextJS](https://nextjs.org/)                             |
+| [styled-components](https://styled-components.com/)       |
+| [react-icons](https://react-icons.github.io/react-icons/) |
+| [axios](https://github.com/axios/axios)                   |
+|                                                           |
+|                                                           |
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# :construction_worker: Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+**You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then in order to clone the project via HTTPS, run this command:**
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`git clone https://github.com/jonatasoc/nlw_movit.git`
 
-## Learn More
+SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+`git@github.com:jonatasoc/nlw_movit.git`
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Install dependencies**
+
+`yarn`
+
+# :runner: Getting Started
+
+After that, run the following command in order to start the application in a development environment:
+
+`yarn start`
+
+# :closed_book: License
+
+Released in 2021
+This project is under the MIT license
