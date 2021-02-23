@@ -1,5 +1,6 @@
 <h1 align="center">
     <img alt="Movit" title="Movit" width="64" height="64" src="docs/logo.png" />
+    Movit
 </h1>
 
 <!-- <p align="center">
