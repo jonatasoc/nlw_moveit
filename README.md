@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="Movit" title="Movit" width="400" src="docs/logo2.png" />
+    <img alt="Moveit" title="Moveit" width="400" src="docs/logo2.png" />
     <br>
     <br>
 </div>
@@ -7,22 +7,22 @@
 ---
 
 <p align="center">
-   <img src="docs/movit1.png" width="auto"/>
+   <img src="docs/moveit1.png" width="auto"/>
 </p>
 <p align="center">
-   <img src="docs/movit2.png" width="auto"/>
+   <img src="docs/moveit2.png" width="auto"/>
 </p>
 <p align="center">
-   <img src="docs/movit3.png" width="auto"/>
+   <img src="docs/moveit3.png" width="auto"/>
 </p>
 <p align="center">
-   <img src="docs/movit4.png" width="auto"/>
+   <img src="docs/moveit4.png" width="auto"/>
 </p>
 <p align="center">
-   <img src="docs/movit5.png" width="auto"/>
+   <img src="docs/moveit5.png" width="auto"/>
 </p>
 <p align="center">
-   <img src="docs/movit6.png" width="auto"/>
+   <img src="docs/moveit6.png" width="auto"/>
 </p>
 
 ---
@@ -43,7 +43,7 @@
 
 This idea for the project came from the [Rocketseat](https://rocketseat.com.br/) guys, on the first NLW (Next Level Week) of 2021.
 The goal of this project is to put in moviment someone that works for a long period in front of a computer.
-Movit uses the gamification conecpt and with it you can set a time to remember you to exercise, like the Pomodoro technique. If you done the exercise, your XP level will be increasing, and can share it with your friends.
+moveit uses the gamification conecpt and with it you can set a time to remember you to exercise, like the Pomodoro technique. If you done the exercise, your XP level will be increasing, and can share it with your friends.
 
 # :rocket: Features
 
@@ -71,11 +71,11 @@ Movit uses the gamification conecpt and with it you can set a time to remember y
 
 **You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then in order to clone the project via HTTPS, run this command:**
 
-`git clone https://github.com/jonatasoc/nlw_movit.git`
+`git clone https://github.com/jonatasoc/nlw_moveit.git`
 
 SSH URLs provide access to a Git repository via SSH, a secure protocol. If you have a SSH key registered in your Github account, clone the project using this command:
 
-`git@github.com:jonatasoc/nlw_movit.git`
+`git@github.com:jonatasoc/nlw_moveit.git`
 
 **Install dependencies**
 
