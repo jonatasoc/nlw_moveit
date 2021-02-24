@@ -1,5 +1,5 @@
 <div align="center">
-    <img alt="Movit" title="Movit" width="64" height="64" src="docs/logo.png" />
+    <img alt="Movit" title="Movit" width="64" height="64" src="docs/logo2.png" />
     <br>
 </div>
 
