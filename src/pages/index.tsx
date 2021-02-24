@@ -1,5 +1,7 @@
-import ExperienceBar from "../components/ExperienceBar/ExperienceBar";
-import { Container, GlobalStyle } from "../styles/global";
+import ExperienceBar from "../components/ExperienceBar";
+import Profile from "../components/Profile";
+import { GlobalStyle } from "../styles/global";
+import { Container } from "./styles";
 
 export default function Home() {
   return (
@@ -7,6 +9,12 @@ export default function Home() {
       <GlobalStyle />
       <Container>
         <ExperienceBar />
+
+        <section>
+          <div>
+            <Profile />
+          </div>
+        </section>
       </Container>
     </>
   );
