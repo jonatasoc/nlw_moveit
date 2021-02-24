@@ -2,20 +2,26 @@
     <img alt="Movit" title="Movit" width="64" height="64" src="docs/logo.png" />
     <br>
     <h1><strong>Movit</strong><h1>
-
 </div>
 
-<!-- <p align="center">
-   <img src="docs/happy.jpeg" width="auto"/>
-</p>
-
 <p align="center">
-   <img src="docs/OrphanagesView.png" width="auto"/>
+   <img src="docs/movit1.png" width="auto"/>
 </p>
-
 <p align="center">
-   <img src="docs/Screenshot-Create.png" width="auto"/>
-</p> -->
+   <img src="docs/movit2.png" width="auto"/>
+</p>
+<p align="center">
+   <img src="docs/movit3.png" width="auto"/>
+</p>
+<p align="center">
+   <img src="docs/movit4.png" width="auto"/>
+</p>
+<p align="center">
+   <img src="docs/movit5.png" width="auto"/>
+</p>
+<p align="center">
+   <img src="docs/movit6.png" width="auto"/>
+</p>
 
 ---
 
