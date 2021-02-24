@@ -47,11 +47,11 @@ Movit uses the gamification conecpt and with it you can set a time to remember y
 
 # :rocket: Features
 
-- #### Start/Abort a cycle for a new exercise
-- #### Check whether you have finished the exercise or not.
-- #### Store the completed challenges and XP.
-- #### Level up the user depending on his XP
-- #### Share XP on Twitter
+- Start/Abort a cycle for a new exercise
+- Check whether you have finished the exercise or not.
+- Store the completed challenges and XP.
+- Level up the user depending on his XP
+- Share XP on Twitter
 
 # :star: Technologies
 
