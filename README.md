@@ -41,17 +41,17 @@
 
 # :information_source: About
 
-This idea for the project came from the [Rocketseat](https://rocketseat.com.br/) people, in the first NLW (Next Level Week) of 2021.
+This idea for the project came from the [Rocketseat](https://rocketseat.com.br/) guys, on the first NLW (Next Level Week) of 2021.
 The goal of this project is to put in moviment someone that works for a long period in front of a computer.
 Movit uses the gamification conecpt and with it you can set a time to remember you to exercise, like the Pomodoro technique. If you done the exercise, your XP level will be increasing, and can share it with your friends.
 
 # :rocket: Features
 
-<!-- - #### Home Landing Page.
-- #### A list of created Orphanages pinned in a map
-- #### Creating new orphanages
-- #### View specific orphanage
-- #### Upload Photos -->
+- #### Start/Abort a cycle for a new exercise
+- #### Check whether you have finished the exercise or not.
+- #### Store the completed challenges and XP.
+- #### Level up the user depending on his XP
+- #### Share XP on Twitter
 
 # :star: Technologies
 
