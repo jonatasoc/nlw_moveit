@@ -4,10 +4,10 @@ import { Container } from "./styles";
 
 const CompletedChallenges: React.FC = () => {
   return (
-    <div>
+    <Container>
       <span>Desafios completos</span>
       <span>5</span>
-    </div>
+    </Container>
   );
 };
 
