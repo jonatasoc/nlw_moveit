@@ -1,7 +1,10 @@
 <div align="center">
-    <img alt="Movit" title="Movit" width="64" height="64" src="docs/logo2.png" />
+    <img alt="Movit" title="Movit" width="400" src="docs/logo2.png" />
+    <br>
     <br>
 </div>
+
+---
 
 <p align="center">
    <img src="docs/movit1.png" width="auto"/>
