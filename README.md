@@ -39,14 +39,9 @@
 
 # :information_source: About
 
-<!-- This project was created in the NLW (Next Level Week) #3 promoted by [Rocketseat](https://rocketseat.com.br/).
-The project consists in connecting users to orphanages near by their location.
-The App contais 4 pages:
-
-- Home
-- OrphanagesMap (List of Orphanages in a Map)
-- Orphanage (specific Orphanage selected)
-- Create Orphanage -->
+This idea for the project came from the [Rocketseat](https://rocketseat.com.br/) people, in the first NLW (Next Level Week) of 2021.
+The goal of this project is to put in moviment someone that works for a long period in front of a computer.
+Movit uses the gamification conecpt and with it you can set a time to remember you to exercise, like the Pomodoro technique. If you done the exercise, your XP level will be increasing, and can share it with your friends.
 
 # :rocket: Features
 
