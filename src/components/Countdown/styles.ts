@@ -1,4 +1,22 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const dash = keyframes`
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+`;
+
+const dashCheck = keyframes`
+  0% {
+    stroke-dashoffset: -100;
+  }
+  100% {
+    stroke-dashoffset: 900;
+  }
+`;
 
 export const Container = styled.div`
   display: flex;
@@ -52,8 +70,9 @@ export const CountdownButton = styled.button`
   border: 0;
   border-radius: 5px;
 
-  background-color: ${props => (props.isActive ? 'var(--red)' : 'var(--blue)')};
-  color: var(--white);
+  background-color: ${props =>
+    props.isActive ? 'var(--white)' : 'var(--blue)'};
+  color: ${props => (props.isActive ? 'var(--text)' : 'var(--white)')};
 
   font-size: 1.25rem;
   font-weight: 600;
@@ -63,6 +82,11 @@ export const CountdownButton = styled.button`
   &:not(:disabled):hover {
     background: ${props =>
       props.isActive ? 'var(--red-dark)' : 'var(--blue-dark)'};
+    color: ${props => (props.isActive ? 'var(--white)' : 'var(--text)')};
+  }
+
+  svg {
+    margin-left: 15px;
   }
 `;
 
@@ -70,4 +94,26 @@ export const HasFinishedButton = styled(CountdownButton)`
   background: var(--white);
   color: var(--text);
   cursor: not-allowed;
+
+  svg {
+    color: var(--green);
+    margin-left: 15px;
+    width: 20px;
+    height: auto;
+
+    circle,
+    polyline {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 0;
+    }
+
+    circle {
+      animation: ${dash} 0.9s ease-in-out;
+    }
+
+    polyline {
+      stroke-dashoffset: -100;
+      animation: ${dashCheck} 0.9s 0.35s ease-in-out forwards;
+    }
+  }
 `;
