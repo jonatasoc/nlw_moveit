@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
-export const Container = styled.div`
+const Container = styled.div`
   height: 100vh;
   max-width: 992px;
   margin: 0 auto;
@@ -18,3 +18,5 @@ export const Container = styled.div`
     align-content: center;
   }
 `;
+
+export default Container;
