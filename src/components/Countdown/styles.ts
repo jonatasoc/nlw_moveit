@@ -98,7 +98,7 @@ export const HasFinishedButton = styled(CountdownButton)`
   svg {
     color: var(--green);
     margin-left: 15px;
-    width: 20px;
+    width: 25px;
     height: auto;
 
     circle,
