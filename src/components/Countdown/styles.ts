@@ -52,7 +52,7 @@ export const CountdownButton = styled.button`
   border: 0;
   border-radius: 5px;
 
-  background-color: var(--blue);
+  background-color: ${props => (props.isActive ? 'var(--red)' : 'var(--blue)')};
   color: var(--white);
 
   font-size: 1.25rem;
@@ -60,7 +60,14 @@ export const CountdownButton = styled.button`
 
   transition: background-color 0.2s;
 
-  &:hover {
-    background: var(--blue-dark);
+  &:not(:disabled):hover {
+    background: ${props =>
+      props.isActive ? 'var(--red-dark)' : 'var(--blue-dark)'};
   }
+`;
+
+export const HasFinishedButton = styled(CountdownButton)`
+  background: var(--white);
+  color: var(--text);
+  cursor: not-allowed;
 `;
