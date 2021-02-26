@@ -6,6 +6,7 @@ export const Container = styled.div`
   background: var(--white);
   border-radius: 5px;
   box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem 2rem;
 
   display: flex;
   flex-direction: column;
@@ -48,6 +49,7 @@ export const ChallengeActive = styled.div`
   header {
     color: var(--blue);
     font-weight: 600;
+    font-size: 1.25rem;
     padding: 0 2rem 1.5rem;
     border-bottom: 1px solid var(--gray-line);
   }
@@ -63,7 +65,7 @@ export const ChallengeActive = styled.div`
       font-weight: 600;
       font-size: 2rem;
       color: var(--title);
-      margin: 1.5rem 0 1 rem;
+      margin: 1.5rem 0 1rem;
     }
 
     p {

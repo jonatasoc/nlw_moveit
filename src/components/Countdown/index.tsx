@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { MdPlayArrow, MdClose } from 'react-icons/md';
+import { ChallengesContext } from '../../contexts/ChallengesContext';
 
 import { Container, CountdownButton, HasFinishedButton } from './styles';
 
 let countdownTimeout: NodeJS.Timeout;
 
 const Countdown: React.FC = () => {
+  const { startNewChallenge } = useContext(ChallengesContext);
+
   const [time, setTime] = useState(0.1 * 60);
   const [isActive, setIsActive] = useState(false);
   const [hasFinished, setHasFinished] = useState(false);
@@ -37,6 +40,7 @@ const Countdown: React.FC = () => {
     } else if (isActive && time === 0) {
       setHasFinished(true);
       setIsActive(false);
+      startNewChallenge();
     }
   }, [isActive, time]);
 
@@ -65,8 +69,8 @@ const Countdown: React.FC = () => {
             <circle
               fill="#4cd62b"
               stroke="#4cd62b"
-              stroke-width="6"
-              stroke-miterlimit="10"
+              strokeWidth="6"
+              strokeMiterlimit="10"
               cx="65.1"
               cy="65.1"
               r="62.1"
@@ -74,9 +78,9 @@ const Countdown: React.FC = () => {
             <polyline
               fill="none"
               stroke="white"
-              stroke-width="6"
-              stroke-linecap="round"
-              stroke-miterlimit="10"
+              strokeWidth="6"
+              strokeLinecap="round"
+              strokeMiterlimit="10"
               points="100.2,40.2 51.5,88.8 29.8,67.5 "
             />
           </svg>
