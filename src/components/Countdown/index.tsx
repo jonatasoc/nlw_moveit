@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { MdPlayArrow, MdClose, MdCheckCircle } from 'react-icons/md';
+import { MdPlayArrow, MdClose } from 'react-icons/md';
 
 import { Container, CountdownButton, HasFinishedButton } from './styles';
 
@@ -57,7 +57,6 @@ const Countdown: React.FC = () => {
       {hasFinished ? (
         <HasFinishedButton type="button" disabled>
           Ciclo Encerrado
-          {/* <MdCheckCircle size={25} /> */}
           <svg
             version="1.1"
             xmlns="http://www.w3.org/2000/svg"
