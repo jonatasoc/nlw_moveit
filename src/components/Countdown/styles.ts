@@ -85,6 +85,10 @@ export const CountdownButton = styled.button`
     color: ${props => (props.isActive ? 'var(--white)' : 'var(--text)')};
   }
 
+  &:disabled {
+    border-bottom: 3px solid var(--green);
+  }
+
   svg {
     margin-left: 15px;
   }
