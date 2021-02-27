@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import { ChallengesContext } from '../../contexts/ChallengesContext';
+import { CountdownContext } from '../../contexts/CountdownContext';
 
 import { Container, ChallengeNotActive, ChallengeActive } from './styles';
 
@@ -7,6 +8,18 @@ const ChallengeBox: React.FC = () => {
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(
     ChallengesContext,
   );
+
+  const { resetCountdown } = useContext(CountdownContext);
+
+  function handleChallengeSucceeded() {
+    completeChallenge();
+    resetCountdown();
+  }
+
+  function handleChallengeFailed() {
+    resetChallenge();
+    resetCountdown();
+  }
 
   return (
     <Container>
@@ -21,10 +34,10 @@ const ChallengeBox: React.FC = () => {
           </main>
 
           <footer>
-            <button type="button" onClick={resetChallenge}>
+            <button type="button" onClick={handleChallengeFailed}>
               Falhei
             </button>
-            <button type="button" onClick={completeChallenge}>
+            <button type="button" onClick={handleChallengeSucceeded}>
               Completei
             </button>
           </footer>
