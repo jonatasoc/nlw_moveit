@@ -38,12 +38,12 @@ export default function Home({
         <ExperienceBar />
         <CountdownProvider>
           <section>
-            <div>
+            <div style={{ marginBottom: '1rem' }}>
               <Profile />
               <CompletedChallenges />
               <Countdown />
             </div>
-            <div>
+            <div style={{ marginBottom: '1rem' }}>
               <ChallengeBox />
             </div>
           </section>

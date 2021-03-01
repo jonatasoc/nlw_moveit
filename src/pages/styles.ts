@@ -9,15 +9,19 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
 
+  @media (max-width: 768px) {
+    padding: 2.5rem 1rem;
+  }
+
   section {
     flex: 1;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 6.25rem;
+    gap: 5.25rem;
     align-content: center;
 
-    @media (max-width: 576px) {
+    @media (max-width: 768px) {
       margin-top: 3rem;
       grid-template-columns: none;
       grid-template-rows: 1fr 1fr;

@@ -15,10 +15,6 @@ export const Container = styled.div`
   justify-content: center;
 
   text-align: center;
-
-  @media (max-width: 576px) {
-    margin-bottom: 10px;
-  }
 `;
 
 export const ChallengeNotActive = styled(animated.div)`
