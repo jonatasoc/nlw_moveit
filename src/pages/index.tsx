@@ -33,3 +33,16 @@ export default function Home() {
     </Container>
   );
 }
+
+export const getServerSideProps = async () => {
+  const user = {
+    level: 1,
+    currenteExperience: 50,
+  };
+
+  console.log(user);
+
+  return {
+    props: user,
+  };
+};

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { animated } from 'react-spring';
 
 export const Container = styled.div`
   height: 100%;
@@ -16,7 +17,7 @@ export const Container = styled.div`
   text-align: center;
 `;
 
-export const ChallengeNotActive = styled.div`
+export const ChallengeNotActive = styled(animated.div)`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -41,7 +42,7 @@ export const ChallengeNotActive = styled.div`
   }
 `;
 
-export const ChallengeActive = styled.div`
+export const ChallengeActive = styled(animated.div)`
   height: 100%;
   display: flex;
   flex-direction: column;
