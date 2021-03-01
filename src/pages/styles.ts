@@ -16,6 +16,13 @@ const Container = styled.div`
     grid-template-columns: 1fr 1fr;
     gap: 6.25rem;
     align-content: center;
+
+    @media (max-width: 576px) {
+      margin-top: 3rem;
+      grid-template-columns: none;
+      grid-template-rows: 1fr 1fr;
+      gap: 1rem;
+    }
   }
 `;
 
