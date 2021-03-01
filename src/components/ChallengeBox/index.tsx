@@ -17,6 +17,7 @@ const ChallengeBox: React.FC = () => {
   }
 
   function handleChallengeFailed() {
+    new Audio('/failed.mp3').play();
     resetChallenge();
     resetCountdown();
   }
