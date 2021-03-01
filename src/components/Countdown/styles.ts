@@ -25,6 +25,11 @@ export const Container = styled.div`
   font-weight: 600;
   color: var(--title);
 
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   > div {
     flex: 1;
 
@@ -78,6 +83,12 @@ export const CountdownButton = styled.button`
   font-weight: 600;
 
   transition: background-color 0.2s;
+
+  @media (max-width: 768px) {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+  }
 
   &:not(:disabled):hover {
     background: ${props =>

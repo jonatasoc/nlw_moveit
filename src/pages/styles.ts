@@ -10,7 +10,7 @@ const Container = styled.div`
   flex-direction: column;
 
   @media (max-width: 768px) {
-    padding: 2.5rem 1rem;
+    padding: 2.5rem 1.5rem;
   }
 
   section {
