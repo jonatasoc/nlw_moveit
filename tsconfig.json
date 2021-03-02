@@ -18,7 +18,8 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "src/components/ExperienceBar"
+    "src/components/ExperienceBar",
+    "src/pages/_document.js"
   ],
   "exclude": ["node_modules"]
 }
