@@ -11,9 +11,8 @@ export const Container = styled.aside`
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.05));
 
-  img {
+  div:first-child {
     width: 48px;
-    margin: 0 auto;
     position: absolute;
     top: 20px;
   }
@@ -46,10 +45,12 @@ export const Container = styled.aside`
 
   @media (max-width: 768px) {
     width: 100%;
-    height: 112px;
+    height: 80px;
 
     flex-direction: row;
     justify-content: space-between;
+
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
 
     img {
       margin-left: 10px;
@@ -74,9 +75,6 @@ export const Container = styled.aside`
 
       svg:first-child {
         margin-bottom: 0;
-      }
-      svg:last-child {
-        margin-right: 20px;
       }
     }
   }

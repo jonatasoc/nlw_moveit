@@ -26,7 +26,7 @@ export const Container = styled.div`
   color: var(--title);
 
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -85,7 +85,7 @@ export const CountdownButton = styled.button`
   transition: background-color 0.2s;
 
   @media (max-width: 768px) {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 2rem;
   }
