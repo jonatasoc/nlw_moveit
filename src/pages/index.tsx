@@ -10,7 +10,7 @@ import Profile from '../components/Profile';
 import { CountdownProvider } from '../contexts/CountdownContext';
 
 import { GlobalStyle } from '../styles/global';
-import { Container, MainContent } from './styles';
+import { Container, MainContent } from '../styles/global';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 import Sidebar from '../components/Sidebar';
 
