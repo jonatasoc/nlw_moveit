@@ -3,12 +3,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
 
-  aside {
-    width: 112px;
-  }
-
   main {
     flex: 1;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 
@@ -22,7 +22,7 @@ export const MainContent = styled.main`
   flex-direction: column;
 
   @media (max-width: 768px) {
-    padding: 2.5rem 1.5rem;
+    padding: 1rem 1.5rem;
   }
 
   section {

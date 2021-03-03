@@ -8,7 +8,9 @@ const Sidebar: React.FC = () => {
   return (
     <>
       <Container>
-        <img src="/logo.svg" alt="" />
+        <div>
+          <img src="/logo.svg" alt="" />
+        </div>
         <div>
           <FiHome />
           <FaMedal />
