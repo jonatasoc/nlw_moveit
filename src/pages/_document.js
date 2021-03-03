@@ -1,6 +1,9 @@
 import Document, { Html, Main, Head, NextScript } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
+// TODO: Convert to Typescript, .tsx
+// Find a way to extends the Document props to accept styleTags custom const
+
 export default class MyDocument extends Document {
   static getInitialProps({ renderPage }) {
     // Step 1: Create an instance of ServerStyleSheet

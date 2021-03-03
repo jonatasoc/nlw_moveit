@@ -10,8 +10,9 @@ import Profile from '../components/Profile';
 import { CountdownProvider } from '../contexts/CountdownContext';
 
 import { GlobalStyle } from '../styles/global';
-import Container from './styles';
+import { Container, MainContent } from './styles';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
+import Sidebar from '../components/Sidebar';
 
 interface HomeProps {
   level: number;
@@ -30,24 +31,27 @@ export default function Home({
       currentExperience={currentExperience}
       challengesCompleted={challengesCompleted}
     >
+      <GlobalStyle />
       <Container>
-        <Head>
-          <title>Início | move.it</title>
-        </Head>
-        <GlobalStyle />
-        <ExperienceBar />
-        <CountdownProvider>
-          <section>
-            <div style={{ marginBottom: '1rem' }}>
-              <Profile />
-              <CompletedChallenges />
-              <Countdown />
-            </div>
-            <div style={{ marginBottom: '1rem' }}>
-              <ChallengeBox />
-            </div>
-          </section>
-        </CountdownProvider>
+        <Sidebar />
+        <MainContent>
+          <Head>
+            <title>Início | move.it</title>
+          </Head>
+          <ExperienceBar />
+          <CountdownProvider>
+            <section>
+              <div style={{ marginBottom: '1rem' }}>
+                <Profile />
+                <CompletedChallenges />
+                <Countdown />
+              </div>
+              <div style={{ marginBottom: '1rem' }}>
+                <ChallengeBox />
+              </div>
+            </section>
+          </CountdownProvider>
+        </MainContent>
       </Container>
     </ChallengesProvider>
   );

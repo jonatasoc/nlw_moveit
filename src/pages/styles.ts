@@ -1,6 +1,18 @@
 import styled from 'styled-components';
 
-const Container = styled.div`
+export const Container = styled.div`
+  display: flex;
+
+  aside {
+    width: 112px;
+  }
+
+  main {
+    flex: 1;
+  }
+`;
+
+export const MainContent = styled.main`
   height: 100vh;
   max-width: 992px;
   margin: 0 auto;
@@ -29,5 +41,3 @@ const Container = styled.div`
     }
   }
 `;
-
-export default Container;
