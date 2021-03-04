@@ -25,7 +25,7 @@ export const Container = styled.aside`
 
     svg {
       width: 80px;
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       color: var(--blue);
       cursor: pointer;
       padding: 10px;
@@ -64,7 +64,6 @@ export const Container = styled.aside`
       justify-content: flex-end;
 
       svg {
-        font-size: 2.5rem;
         width: 60px;
 
         &:hover {
