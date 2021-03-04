@@ -30,9 +30,10 @@ export const Container = styled.aside`
       cursor: pointer;
       padding: 10px;
       transition: all 0.2s;
+      box-sizing: content-box;
 
       &:hover {
-        border-bottom: solid 7px var(--blue);
+        border-left: solid 7px var(--blue);
         box-shadow: 0px 1px 2px -1px var(--blue);
         border-radius: 0.4rem;
       }
@@ -63,8 +64,8 @@ export const Container = styled.aside`
       justify-content: flex-end;
 
       svg {
-        box-sizing: content-box;
         font-size: 2.5rem;
+        width: 60px;
 
         &:hover {
           border-bottom: solid 7px var(--blue);
