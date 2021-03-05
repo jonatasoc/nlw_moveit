@@ -68,8 +68,9 @@ export const Container = styled.aside`
 
         &:hover {
           border-bottom: solid 7px var(--blue);
-          box-shadow: 0px 1px 2px -1px var(--blue);
-          border-radius: 0.4rem;
+          border-left: 0;
+          box-shadow: 0px 0px 3px -1px var(--blue);
+          /* border-radius: 0.4rem; */
         }
       }
 
