@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { FiHome } from 'react-icons/fi';
 import { FaMedal } from 'react-icons/fa';
 
@@ -12,8 +13,16 @@ const Sidebar: React.FC = () => {
           <img src="/logo.svg" alt="" />
         </div>
         <div>
-          <FiHome />
-          <FaMedal />
+          <Link href="/">
+            <a>
+              <FiHome />
+            </a>
+          </Link>
+          <Link href="/leaderboard">
+            <a>
+              <FaMedal />
+            </a>
+          </Link>
         </div>
       </Container>
     </>
