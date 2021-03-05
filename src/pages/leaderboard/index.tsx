@@ -5,6 +5,7 @@ import { ChallengesProvider } from '../../contexts/ChallengesContext';
 import { Container, MainContent } from './styles';
 import Sidebar from '../../components/Sidebar';
 import Head from 'next/head';
+import Layout from '../../components/Layout';
 
 interface LeaderboardProps {
   level: number;
@@ -18,20 +19,35 @@ export default function Leaderboard({
   challengesCompleted,
 }: LeaderboardProps) {
   return (
-    <ChallengesProvider
-      level={level}
-      currentExperience={currentExperience}
-      challengesCompleted={challengesCompleted}
-    >
-      <Container>
-        <Sidebar />
-        <MainContent>
-          <Head>
-            <title>LeadBoard | move.it</title>
-          </Head>
-        </MainContent>
-      </Container>
-    </ChallengesProvider>
+    <Layout>
+      <ChallengesProvider
+        level={level}
+        currentExperience={currentExperience}
+        challengesCompleted={challengesCompleted}
+      >
+        <Container>
+          <Sidebar />
+          <MainContent>
+            <Head>
+              <title>Leadboard | move.it</title>
+            </Head>
+            <section>
+              <h1>Leadboarder</h1>
+              <div>
+                <p>POSIÇÃO</p>
+                <p>USUÁRIO</p>
+                <p>DESAFIOS</p>
+                <p>EXPERÊNCIA</p>
+              </div>
+              <div>
+                <p>1</p>
+                <div></div>
+              </div>
+            </section>
+          </MainContent>
+        </Container>
+      </ChallengesProvider>
+    </Layout>
   );
 }
 
