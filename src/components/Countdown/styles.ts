@@ -1,5 +1,9 @@
 import styled, { keyframes } from 'styled-components';
 
+interface ButtonProps {
+  isActive?: boolean;
+}
+
 const dash = keyframes`
   0% {
     stroke-dashoffset: 1000;
@@ -62,7 +66,7 @@ export const Container = styled.div`
   }
 `;
 
-export const CountdownButton = styled.button`
+export const CountdownButton = styled.button<ButtonProps>`
   width: 100%;
   height: 5rem;
 
