@@ -1,5 +1,15 @@
+import { GlobalStyle } from '../../styles/global';
 import Container from './styles';
 
-export default function Layout({ children }) {
-  return <Container>{children}</Container>;
+type Props = {
+  children: React.ReactNode;
+};
+
+export default function Layout({ children }: Props) {
+  return (
+    <Container>
+      <GlobalStyle />
+      {children}
+    </Container>
+  );
 }

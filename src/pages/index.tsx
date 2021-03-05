@@ -9,10 +9,10 @@ import ExperienceBar from '../components/ExperienceBar';
 import Profile from '../components/Profile';
 import { CountdownProvider } from '../contexts/CountdownContext';
 
-import { GlobalStyle } from '../styles/global';
-import { Container, MainContent } from '../styles/global';
+import { MainContent } from '../styles/global';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 import Sidebar from '../components/Sidebar';
+import Layout from '../components/Layout';
 
 interface HomeProps {
   level: number;
@@ -31,8 +31,7 @@ export default function Home({
       currentExperience={currentExperience}
       challengesCompleted={challengesCompleted}
     >
-      <GlobalStyle />
-      <Container>
+      <Layout>
         <Sidebar />
         <MainContent>
           <Head>
@@ -52,7 +51,7 @@ export default function Home({
             </section>
           </CountdownProvider>
         </MainContent>
-      </Container>
+      </Layout>
     </ChallengesProvider>
   );
 }
