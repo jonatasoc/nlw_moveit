@@ -5,7 +5,7 @@ import { animated } from 'react-spring';
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 import { CountdownContext } from '../../contexts/CountdownContext';
 
-function ChallengeBox() {
+export default function ChallengeBox() {
   const { activeChallenge, resetChallenge, completeChallenge } = useContext(
     ChallengesContext,
   );
@@ -167,5 +167,3 @@ const ChallengeActive = styled(animated.div)`
     }
   }
 `;
-
-export default ChallengeBox;
