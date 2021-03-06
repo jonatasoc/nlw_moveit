@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
+import styled from 'styled-components';
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 
-import { Container } from './styles';
-
-const ExperienceBar: React.FC = () => {
+export default function ExperienceBar() {
   const { currentExperience, experienceToNextLevel } = useContext(
     ChallengesContext,
   );
@@ -23,6 +22,34 @@ const ExperienceBar: React.FC = () => {
       <span>{experienceToNextLevel} xp</span>
     </Container>
   );
-};
+}
 
-export default ExperienceBar;
+const Container = styled.header`
+  display: flex;
+  align-items: center;
+
+  span {
+    font-size: 1rem;
+  }
+
+  > div {
+    flex: 1;
+    height: 4px;
+    border-radius: 4px;
+    background: var(--gray-line);
+    margin: 0 1.5rem;
+    position: relative;
+  }
+
+  > div > div {
+    height: 4px;
+    border-radius: 4px;
+    background: var(--green);
+  }
+
+  > div > span {
+    position: absolute;
+    top: 12px;
+    transform: translateX(-50%);
+  }
+`;
