@@ -11,6 +11,7 @@ import { CountdownProvider } from '../contexts/CountdownContext';
 
 import { ChallengesProvider } from '../contexts/ChallengesContext';
 import Layout from '../components/Layout';
+import styled from 'styled-components';
 
 interface HomeProps {
   level: number;
@@ -35,7 +36,7 @@ export default function Home({
         </Head>
         <ExperienceBar />
         <CountdownProvider>
-          <section>
+          <HomeSection>
             <div style={{ marginBottom: '1rem' }}>
               <Profile />
               <CompletedChallenges />
@@ -44,7 +45,7 @@ export default function Home({
             <div style={{ marginBottom: '1rem' }}>
               <ChallengeBox />
             </div>
-          </section>
+          </HomeSection>
         </CountdownProvider>
       </Layout>
     </ChallengesProvider>
@@ -67,3 +68,19 @@ const getServerSideProps: GetServerSideProps = async ctx => {
     },
   };
 };
+
+const HomeSection = styled.section`
+  flex: 1;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5.25rem;
+  align-content: center;
+
+  @media (max-width: 768px) {
+    margin-top: 3rem;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+  }
+`;
