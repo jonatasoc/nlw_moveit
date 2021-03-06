@@ -1,9 +1,9 @@
 import { GetServerSideProps } from 'next';
 import React from 'react';
+import styled from 'styled-components';
+
 import { ChallengesProvider } from '../../contexts/ChallengesContext';
 
-import { Container, MainContent } from './styles';
-import Sidebar from '../../components/Sidebar';
 import Head from 'next/head';
 import Layout from '../../components/Layout';
 
@@ -26,25 +26,26 @@ export default function Leaderboard({
         challengesCompleted={challengesCompleted}
       >
         <Container>
-          <Sidebar />
-          <MainContent>
-            <Head>
-              <title>Leadboard | move.it</title>
-            </Head>
-            <section>
-              <h1>Leadboarder</h1>
+          <Head>
+            <title>Leadboard | move.it</title>
+          </Head>
+          <section>
+            <h1>Leadboarder</h1>
+            <div>
+              <p>POSIÇÃO</p>
+              <p>USUÁRIO</p>
+              <p>DESAFIOS</p>
+              <p>EXPERÊNCIA</p>
+            </div>
+            <div>
+              <p>1</p>
               <div>
-                <p>POSIÇÃO</p>
-                <p>USUÁRIO</p>
-                <p>DESAFIOS</p>
-                <p>EXPERÊNCIA</p>
+                <div>
+                  <img src="" alt="" />
+                </div>
               </div>
-              <div>
-                <p>1</p>
-                <div></div>
-              </div>
-            </section>
-          </MainContent>
+            </div>
+          </section>
         </Container>
       </ChallengesProvider>
     </Layout>
@@ -67,3 +68,5 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
     },
   };
 };
+
+const Container = styled.div``;

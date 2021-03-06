@@ -9,9 +9,7 @@ import ExperienceBar from '../components/ExperienceBar';
 import Profile from '../components/Profile';
 import { CountdownProvider } from '../contexts/CountdownContext';
 
-import { MainContent } from '../styles/global';
 import { ChallengesProvider } from '../contexts/ChallengesContext';
-import Sidebar from '../components/Sidebar';
 import Layout from '../components/Layout';
 
 interface HomeProps {
@@ -32,31 +30,28 @@ export default function Home({
       challengesCompleted={challengesCompleted}
     >
       <Layout>
-        <Sidebar />
-        <MainContent>
-          <Head>
-            <title>Início | move.it</title>
-          </Head>
-          <ExperienceBar />
-          <CountdownProvider>
-            <section>
-              <div style={{ marginBottom: '1rem' }}>
-                <Profile />
-                <CompletedChallenges />
-                <Countdown />
-              </div>
-              <div style={{ marginBottom: '1rem' }}>
-                <ChallengeBox />
-              </div>
-            </section>
-          </CountdownProvider>
-        </MainContent>
+        <Head>
+          <title>Início | move.it</title>
+        </Head>
+        <ExperienceBar />
+        <CountdownProvider>
+          <section>
+            <div style={{ marginBottom: '1rem' }}>
+              <Profile />
+              <CompletedChallenges />
+              <Countdown />
+            </div>
+            <div style={{ marginBottom: '1rem' }}>
+              <ChallengeBox />
+            </div>
+          </section>
+        </CountdownProvider>
       </Layout>
     </ChallengesProvider>
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ctx => {
+const getServerSideProps: GetServerSideProps = async ctx => {
   const user = {
     level: 1,
     currenteExperience: 50,
