@@ -57,18 +57,6 @@ export const GlobalStyle = createGlobalStyle`
   
 `;
 
-export const Container = styled.div`
-  display: flex;
-
-  main {
-    flex: 1;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
-
 export const MainContent = styled.main`
   height: 100vh;
   max-width: 992px;
