@@ -36,6 +36,7 @@ const Container = styled.aside`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: fixed;
 
   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
   filter: drop-shadow(0px 0px 60px rgba(0, 0, 0, 0.05));
@@ -81,6 +82,8 @@ const Container = styled.aside`
     justify-content: space-between;
 
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.05);
+
+    position: initial;
 
     img {
       margin-left: 10px;

@@ -259,6 +259,8 @@ const LeadboardSection = styled.section`
   display: flex;
   flex-direction: column;
 
+  padding-bottom: 20px;
+
   h1 {
     font-size: 2rem;
     color: #2e384d;
