@@ -1,17 +1,44 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
+import useSWR from 'swr';
+import fetch from 'unfetch';
+
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 
-export default function Profile() {
+const githubUserAPI = 'https://api.github.com/users/';
+
+interface UserProps {
+  name: string;
+  avatar_url: string;
+}
+
+const fetcher = url => fetch(url).then(r => r.json());
+
+export async function getStaticProps() {
+  // TODO: Get the user from the Context. Create a UserContext
+
+  const data: UserProps = await fetcher(`${githubUserAPI}jonatasoc`);
+  return { props: { data } };
+}
+
+export default function Profile(props) {
+  const initialData = props.data;
+
+  const { data } = useSWR(`${githubUserAPI}jonatasoc`, fetcher, {
+    initialData,
+  });
+
+  const userData: UserProps = data;
+
   const { level } = useContext(ChallengesContext);
   return (
     <Container>
       <img
-        src="https://github.com/jonatasoc.png"
-        alt="Jonatas de Oliveira Coelho"
+        src={userData ? userData.avatar_url : '/anonymous.jpg'}
+        alt={userData ? userData.name : 'Usuário Anônimo'}
       />
       <div>
-        <strong>Jonatas de Oliveira</strong>
+        <strong>{userData ? userData.name : 'Usuário Anônimo'}</strong>
         <p>
           <img src="icons/level.svg" alt="Level" />
           Level {level}
