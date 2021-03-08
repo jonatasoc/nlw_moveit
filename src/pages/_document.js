@@ -25,10 +25,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Twitter */}
-          <meta name="twitter:card" content="summary" key="twcard" />
-          <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
-
           {/* Open Graph */}
           <meta
             property="og:url"
