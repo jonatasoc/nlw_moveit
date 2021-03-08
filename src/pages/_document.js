@@ -31,6 +31,7 @@ export default class MyDocument extends Document {
             content="https://nlw-moveit-two.vercel.app/"
             key="ogurl"
           />
+          <meta property="og:type" content="website " key="ogtype" />
           <meta property="og:image" content="/screenshot.png" key="ogimage" />
           <meta property="og:site_name" content="Move.it" key="ogsitename" />
           <meta
