@@ -1,10 +1,10 @@
 import { GetServerSideProps } from 'next';
 import React from 'react';
 import styled from 'styled-components';
+import Head from 'next/head';
+import { motion } from 'framer-motion';
 
 import { ChallengesProvider } from '../../contexts/ChallengesContext';
-
-import Head from 'next/head';
 import Layout from '../../components/Layout';
 
 interface LeaderboardProps {
@@ -28,7 +28,15 @@ export default function Leaderboard({
         <Head>
           <title>Leadboard | move.it</title>
         </Head>
-        <LeadboardSection>
+        <LeadboardSection
+          variants={{
+            show: { opacity: 1, x: '0' },
+            hidden: { opacity: 0.2, x: '100%' },
+          }}
+          initial="hidden"
+          animate="show"
+          transition={{ duration: 0.3, ease: 'easeInOut' }}
+        >
           <h1>Leadboader</h1>
           <Cabecalho>
             <p>POSIÇÃO</p>
@@ -255,7 +263,7 @@ export const getServerSideProps: GetServerSideProps = async ctx => {
   };
 };
 
-const LeadboardSection = styled.section`
+const LeadboardSection = styled(motion.section)`
   display: flex;
   flex-direction: column;
 

@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 
 export default function LevelUpModal() {

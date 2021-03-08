@@ -1,5 +1,7 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
+
 import { ChallengesContext } from '../../contexts/ChallengesContext';
 
 export default function ExperienceBar() {
@@ -11,7 +13,15 @@ export default function ExperienceBar() {
     Math.round(currentExperience * 100) / experienceToNextLevel;
 
   return (
-    <Container>
+    <Container
+      variants={{
+        show: { opacity: 1 },
+        hidden: { opacity: 0 },
+      }}
+      initial="hidden"
+      animate="show"
+      transition={{ duration: 0.3 }}
+    >
       <span>0 xp</span>
       <div>
         <div style={{ width: `${percentToNextLevel}%` }} />
@@ -24,7 +34,7 @@ export default function ExperienceBar() {
   );
 }
 
-const Container = styled.header`
+const Container = styled(motion.header)`
   display: flex;
   align-items: center;
 

@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import { GetServerSideProps } from 'next';
+import { motion } from 'framer-motion';
 
 import ChallengeBox from '../components/ChallengeBox';
 
@@ -36,7 +37,15 @@ export default function Home({
         </Head>
         <ExperienceBar />
         <CountdownProvider>
-          <HomeSection>
+          <HomeSection
+            variants={{
+              show: { opacity: 1, x: '0' },
+              hidden: { opacity: 0.2, x: '100%' },
+            }}
+            initial="hidden"
+            animate="show"
+            transition={{ duration: 0.3, ease: 'easeInOut' }}
+          >
             <div style={{ marginBottom: '1rem' }}>
               <Profile />
               <CompletedChallenges />
@@ -69,7 +78,7 @@ const getServerSideProps: GetServerSideProps = async ctx => {
   };
 };
 
-const HomeSection = styled.section`
+const HomeSection = styled(motion.section)`
   flex: 1;
 
   display: grid;
