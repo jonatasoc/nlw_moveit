@@ -36,7 +36,7 @@ export default class MyDocument extends Document {
           <meta property="og:site_name" content="Move.it" key="ogsitename" />
           <meta
             property="og:title"
-            content="Move-it - Put yourself in moviment."
+            content="Move.it - Put yourself in moviment."
             key="ogtitle"
           />
           <meta
