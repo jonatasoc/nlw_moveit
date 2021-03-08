@@ -25,7 +25,30 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel="shortcut icon" href="favicon.png" type="image/png" />
+          {/* Twitter */}
+          <meta name="twitter:card" content="summary" key="twcard" />
+          <meta name="twitter:creator" content={twitterHandle} key="twhandle" />
+
+          {/* Open Graph */}
+          <meta
+            property="og:url"
+            content="https://nlw-moveit-two.vercel.app/"
+            key="ogurl"
+          />
+          <meta property="og:image" content="/screenshot.png" key="ogimage" />
+          <meta property="og:site_name" content="Move.it" key="ogsitename" />
+          <meta
+            property="og:title"
+            content="Move-it - Put yourself in moviment"
+            key="ogtitle"
+          />
+          <meta
+            property="og:description"
+            content="Pausing the work and putting yourself in moviment"
+            key="ogdesc"
+          />
+          <meta property="og:locale" content="pt_BR" key="oglocale" />
+          <link rel="shortcut icon" href="/favicon.png" type="image/png" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
             href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Rajdhani:wght@600&display=swap"
