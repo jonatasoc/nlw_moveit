@@ -36,12 +36,12 @@ export default class MyDocument extends Document {
           <meta property="og:site_name" content="Move.it" key="ogsitename" />
           <meta
             property="og:title"
-            content="Move-it - Put yourself in moviment"
+            content="Move-it - Put yourself in moviment."
             key="ogtitle"
           />
           <meta
             property="og:description"
-            content="Pausing the work and putting yourself in moviment"
+            content="How about pause the work and put yourself in moviment?"
             key="ogdesc"
           />
           <meta property="og:locale" content="pt_BR" key="oglocale" />
