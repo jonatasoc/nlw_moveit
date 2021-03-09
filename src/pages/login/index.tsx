@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import Layout from '../../components/Layout';
-
-// import { Container } from './styles';
+import { FiArrowRight } from 'react-icons/fi';
 
 const Login: React.FC = () => {
   return (
@@ -13,7 +11,15 @@ const Login: React.FC = () => {
         <p>Bem-vindo</p>
         <div>
           <img src="/github.svg" alt="Github" />
-          <input type="text" placeholder="Digite seu username"></input>
+          <p>Faça login com seu Github para começar</p>
+        </div>
+        <div>
+          <Input>
+            <input type="text" placeholder="Digite seu username"></input>
+          </Input>
+          <Button>
+            <FiArrowRight />
+          </Button>
         </div>
       </div>
     </Container>
@@ -34,5 +40,80 @@ const Container = styled.div`
   }
 
   > div {
+    > img {
+      margin-bottom: 10rem;
+    }
+
+    > p {
+      font-weight: 600;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+      margin-top: 24px;
+      margin-bottom: 40px;
+
+      img {
+        margin-right: 24px;
+      }
+
+      p {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #b2b9ff;
+        width: 60%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: initial;
+    height: auto;
+    width: 95%;
+
+    > img {
+      margin-left: 0;
+    }
+  }
+`;
+
+const Input = styled.div`
+  background: linear-gradient(90deg, #4953b8 0%, rgba(73, 83, 184, 0.2) 100%);
+  border-radius: 5px 0px 0px 5px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+
+  input {
+    background: transparent;
+    border: 0;
+    flex: 1;
+    color: #fff;
+    /* padding: 10px; */
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 34px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #b2b9ff;
+    }
+  }
+`;
+
+const Button = styled.div`
+  background: #4953b8;
+  border-radius: 0px 5px 5px 0px;
+  svg {
+    color: #fff;
+    font-size: 2rem;
+    line-height: 34px;
   }
 `;
