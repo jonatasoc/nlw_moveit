@@ -1,4 +1,3 @@
-import { GlobalStyle } from '../../styles/global';
 import styled from 'styled-components';
 import Sidebar from '../Sidebar';
 
@@ -9,7 +8,6 @@ type Props = {
 export default function Layout({ children }: Props) {
   return (
     <Container>
-      <GlobalStyle />
       <Sidebar />
       <MainContent>{children}</MainContent>
     </Container>
